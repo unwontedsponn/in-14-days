@@ -16,7 +16,7 @@ export default function Book() {
 
                 {/* Row 1 */}
                 <div className="border-b">
-                  <h1 className="text-2xl font-bold">Ben Spooner's Beginner to Composer in 14 Days</h1>
+                  <h1 className="text-2xl font-bold">{`Ben Spooner's Beginner to Composer in 14 Days`}</h1>
                   <div className="text-gray-500 text-xs mb-2">Ben Spooner & Hayley JC Spooner</div>
 
                   <div className="flex justify-between">
@@ -45,7 +45,7 @@ export default function Book() {
           <div className="border-b py-6">
             <h2>Publisher Description</h2>
             <div className="text-gray-700 text-sm">
-              <p>Beginner To Composer In 14 Days is delightfully different. Moving swiftly from theory to action, Ben emerges as the teacher you always wished you'd had, championing radical creative freedom, improvisation and composition - even for beginners...</p>
+              <p>{`Beginner To Composer In 14 Days is delightfully different. Moving swiftly from theory to action, Ben emerges as the teacher you always wished you'd had, championing radical creative freedom, improvisation and composition - even for beginners...`}</p>
             </div>
           </div>
           
