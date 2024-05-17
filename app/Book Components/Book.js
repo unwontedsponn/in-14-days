@@ -1,86 +1,51 @@
 export default function Book() {
   return (
-    <main className="bg-white p-4">
-      <div className="max-w-lg mx-auto">
-        <div className="flex flex-col p-4 shadow-xl rounded-lg">
+    <main className="bg-white p-8">  {/* Increase padding for more space around */}
+      <div className="max-w-4xl mx-auto">  {/* Increase max-width for larger display */}
+        <div className="flex flex-col shadow-xl rounded-lg overflow-hidden py-4 px-6">  {/* Add overflow-hidden for cleaner borders */}
 
+          {/* Section 1: Book display and purchase options */}
+          <div className="grid grid-cols-5 gap-4 p-6 border-b">  {/* Use grid layout for better control */}
 
-          {/* Section 1 */}
-          <div className="flex border-b py-6">
+            {/* Left column for image */}
+            <div className="col-span-2">
+              <img src="/images/cover.png" alt="Book cover" className="w-full h-auto"/>  {/* Responsive width */}
+            </div>
 
-              {/* Left column */}
-              <img src="/images/cover.png" alt="Book cover" className="flex-none w-48 h-auto" />
+            {/* Right column for text */}
+            <div className="col-span-3 flex flex-col h-full">
 
-              {/* Right column */}
-              <div className="flex flex-col justify-between flex-grow ml-4">
-
-                {/* Row 1 */}
-                <div className="border-b">
-                  <h1 className="text-2xl font-bold">{`Ben Spooner's Beginner to Composer in 14 Days`}</h1>
-                  <div className="text-gray-500 text-xs mb-2">Ben Spooner & Hayley JC Spooner</div>
-
-                  <div className="flex justify-between">
-                    <div>
-                      <div className="text-yellow-400">★ ★ ★ ★ ★</div>
-                      <div className="text-gray-500 text-sm ml-2">1 Rating</div>
-                    </div>
-
-                    <div className="flex space-x-2">
-                      <div>img1</div>
-                      <div>img2</div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Button row - ensure this is at the bottom */}
-                <div className="flex justify-between mt-auto">
-                  <button className="px-4 py-2 rounded bg-blue-500 text-white text-xs">£4.99</button>
-                  <button className="px-4 py-2 rounded bg-blue-500 text-white text-xs">Want to Read</button>
-                  <button className="px-4 py-2 rounded bg-blue-500 text-white text-xs">Sample</button>
-                </div>
+              {/* Section 1 */}
+              <div>
+                <h1 className="text-3xl font-bold mb-2">Ben Spooner's Beginner to Composer in 14 Days</h1>  {/* Larger text */}
+                <p className="text-gray-500">Ben Spooner & Hayley JC Spooner</p>
+              </div>
+              
+              {/* Section 2 */}
+              <div className="">
+                <h2 className="text-xl font-semibold mb-2">Publisher Description</h2>
+                <p className="text-gray-700 text-xs">
+                  {`Beginner To Composer In 14 Days is delightfully different. Moving swiftly from theory to action, Ben emerges as the teacher you always wished you'd had, championing radical creative freedom, improvisation and composition - even for beginners. Especially for beginners in fact. "Students need freedom to truly fall in love with their instrument" he writes, "frameworks that pique their curiosity over and over again so that practice becomes play". Whether you're a complete beginner or have a little knowledge up your sleeve, you'll adore this dynamic and intimate guide to learning the piano, peppered with evocative vignettes of a life lived with music at its heart. Best of all, you'll come away with a method you can use time and time again to create your very own music, captured on professional quality lead sheets you can share with other musicians, to bring your work to life. Suitable for adults and a useful resource for teachers. Complements graded and traditional approaches to learning.`}
+                </p>
+              </div>
+              
+              {/* Section 3 */}
+              <div className="flex gap-2 mt-auto w-full">
+                <button className="bg-blue-500 text-white py-2 px-4 rounded flex-1 text-center">Amazon</button>
+                <button className="bg-blue-500 text-white py-2 px-4 rounded flex-1 text-center">Apple Books</button>
+                <button className="bg-blue-500 text-white py-2 px-4 rounded flex-1 text-center">Sample</button>
               </div>
             </div>
-          
-          {/* Section 2 */}
-          <div className="border-b py-6">
-            <h2>Publisher Description</h2>
-            <div className="text-gray-700 text-sm">
-              <p>{`Beginner To Composer In 14 Days is delightfully different. Moving swiftly from theory to action, Ben emerges as the teacher you always wished you'd had, championing radical creative freedom, improvisation and composition - even for beginners...`}</p>
-            </div>
           </div>
-          
 
-          {/* Section 3 */}
-          <div className="flex divide-x divide-gray-300 text-center text-gray-500 text-xs py-6">
-            <div className="flex-1 px-2">
-              <div>GENRE</div>
-              <div>image</div>
-              <div>Arts & Entertainment</div>
-            </div>
-            <div className="flex-1 px-2">
-              <div>RELEASED</div>
-              <div>2023</div>
-              <div>29 September</div>
-            </div>
-            <div className="flex-1 px-2">
-              <div>LENGTH</div>
-              <div>168</div>
-              <div>Pages</div>
-            </div>
-            <div className="flex-1 px-2">
-              <div>PUBLISHER</div>
-              <div>B&H Spooner</div>
-            </div>
-            <div className="flex-1 px-2">
-              <div>LANGUAGE</div>
-              <div>EN</div>
-              <div>English</div>
-            </div>
-            <div className="flex-1 px-2">
-              <div>SIZE</div>
-              <div>10.1</div>
-              <div>MB</div>
-            </div>
+          {/* Section 2: Additional Info */}
+          <div className="divide-x divide-gray-300 grid grid-cols-6 text-center text-gray-500 text-xs py-4">
+            <div>GENRE<br/><strong>Arts & Entertainment</strong></div>
+            <div>RELEASED<br/><strong>2023</strong><br/><strong>29 September</strong></div>
+            <div>LENGTH<br/><strong>168 pages</strong></div>
+            <div>PUBLISHER<br/><strong>B&H Spooner</strong></div>
+            <div>LANGUAGE<br/><strong>English</strong></div>
+            <div>SIZE<br/><strong>10.1 MB</strong></div>
           </div>
         </div>
       </div>
