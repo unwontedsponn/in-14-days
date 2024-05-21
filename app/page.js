@@ -1,11 +1,9 @@
-// import Book from "./Book Components/Book"
-import BookWithHTML from "./Book Components/BookWithHTML"
+import Book from "./components/Book"
 
 export default function Home() {
   return (
     <main className="bg-white p-4">
-      {/* <Book /> */}
-      <BookWithHTML />
+      <Book />
     </main>
   )
 }
