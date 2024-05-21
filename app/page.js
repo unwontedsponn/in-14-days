@@ -1,9 +1,11 @@
-import Book from "./components/Book"
+import Header from "./sections/Header"
+import Content from "./sections/Content"
 
 export default function Home() {
   return (
-    <main className="bg-white p-4">
-      <Book />
+    <main className="max-w-6xl mx-auto flex flex-col">
+      <Header />
+      <Content />
     </main>
   )
 }
