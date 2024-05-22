@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        customOrange: '#F5A168',
+        customTurquoise: '#B0DAD2',
+      },
     },
   },
   plugins: [],
