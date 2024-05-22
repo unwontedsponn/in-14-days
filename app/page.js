@@ -1,11 +1,13 @@
 import Header from "./sections/Header"
-import Content from "./sections/Content"
+import Homepage from "./sections/Homepage"
+import Footer from "./sections/Footer"
 
 export default function Home() {
   return (
-    <main className="max-w-6xl mx-auto flex flex-col">
+    <main className="max-w-4xl mx-auto flex flex-col">
       <Header />
-      <Content />
+      <Homepage />
+      <Footer />
     </main>
   )
 }
