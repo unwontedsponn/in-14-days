@@ -10,10 +10,10 @@ export default function BookInfo({onClose}) {
   };
 
   return (
-    <main className="fixed bg-white inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center z-5"> 
+    <main className="fixed inset-0 bg-opacity-75 flex justify-center items-center z-5"> 
       <div className="p-4 border-4 border-black flex flex-col shadow-xl overflow-hidden px-6 bg-white w-full max-w-4xl mx-auto">
 
-        <button onClick={onClose} className="text-right text-gray-500 hover:text-gray-700 font-bold pt-4">
+        <button onClick={onClose} className="text-right text-gray-500 hover:text-gray-700 font-bold pt-4 hover:underline">
           Close
         </button>
 
@@ -22,7 +22,7 @@ export default function BookInfo({onClose}) {
 
           {/* Left column for image */}
           <div className="col-span-2">
-            <img src="/images/cover.png" alt="Book cover" className="w-full h-auto shadow-2xl border-4 border-black"/>
+            <img src="/images/cover.png" alt="Book cover" className="w-full h-auto shadow-2xl"/>
           </div>
 
           {/* Right column for text */}
@@ -45,9 +45,9 @@ export default function BookInfo({onClose}) {
             
             {/* Section 3 */}
             <div className="flex gap-2 mt-auto w-full">
-              <button className="bg-blue-500 text-white py-2 px-4 rounded flex-1 text-center hover:text-black">Amazon</button>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded flex-1 text-center hover:text-black">Apple Books</button>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded flex-1 text-center hover:text-black" onClick={toggleBook}>Sample</button>
+              <button className="bg-customOrange text-white py-2 px-4 rounded flex-1 text-center hover:text-black hover:outline">Amazon</button>
+              <button className="bg-customTurquoise text-white py-2 px-4 rounded flex-1 text-center hover:text-black hover:outline">Apple Books</button>
+              <button className="bg-black text-white py-2 px-4 rounded flex-1 text-center hover:bg-white hover:text-black hover:outline" onClick={toggleBook}>Sample</button>
             </div>
           </div>
         </div>
