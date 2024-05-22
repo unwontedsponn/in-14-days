@@ -1,12 +1,11 @@
-export default function Thumbnail({src, title, author, tag, onClick}) {
+export default function Thumbnail({ src, title, author, onClick }) {
   return (
-    <main className="cursor-pointer border-4 border-black hover:bg-gray-300 transition duration-300" onClick={onClick}>
-      <img src={src} alt="" className="w-full h-auto"/>
-      <div className="border-t-4 border-black p-4">
-        <h1 className="text-xl">{title}</h1>
-        <h2 className="text-sm">{author}</h2>
-        {/* <p>{tag}</p> */}
+    <div className="group cursor-pointer" onClick={onClick}>
+      <img src={src} alt="" className="w-full h-auto group-hover:outline group-hover:outline-2 group-hover:outline-black"/>
+      <div className="">
+        <h1 className="group-hover:underline">{title}</h1>
+        <h2 className="text-xs">{author}</h2>
       </div>
-    </main>
-  )
+    </div>
+  );
 }
